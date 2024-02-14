@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Alimentos</title>
+</head>
+<style>
+
+  body{
+  margin:auto;
+  min-width: auto;
+  height: 30px;
+  max-height: 22%;
+  padding: -100pt;
+  background-image:url(frutass.jpg) ; 
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  }
+
+  .buscar {
+    display: inline-flex;
+    width: 90.8%;
+    margin: 0px;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 8px 0 20px 1em;
+    color: #333;
+    outline: none;   
+        
+    }
+
+
+  .caja {
+        height: 32px;
+        font-size: 14px;
+        background: white;
+        border-width: 1px;
+        border-radius: 15px;
+        position: relative;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        overflow: hidden;
+        
+    }
+
+    .resp{
+        align-items: flex-start;
+        margin: 42px auto;
+        top:21%  auto;
+        width: 54% ;
+        left: 33%   auto;
+        padding:0.11rem auto;
+        border-radius: 0.5rem;
+        border-width: 2px;
+        border-style: solid ;
+        outline-width: 5px;
+        border-color: #efc3e6;
+        justify-content: center auto;
+        background: #FEFAE0;
+        font-weight: 100pc;
+        line-height: 0.61rem; 
+        letter-spacing: 0.070em;
+        text-transform: lowercase;
+        font-size: 25px;
+        font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+        text-indent: center auto;
+        text-decoration-line: none auto;
+        list-style-position: inside auto;
+        vertical-align: middle auto;
+        color:#000000 ;
+    }
+    
+    #buton{
+    position:  absolute;
+    margin:0px;
+    padding:4pt;
+    top: 146px;
+    right: 300px;
+    height: 33pt;
+    width: 90pt;
+    font-size: 17px;
+    text-align: center;
+    line-height: 3px;
+    border-width: 1px;
+    background-color: #f0a6ca;
+    -webkit-border-radius: 13px 13px 13px;
+    -moz-border-radius: 13px 13px 13px 13px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+
+   }
+        
+    #buton:hover{
+    outline-width: 0px;
+    padding: 1px 0 1px 1px;
+    color: #333; 
+    background-color: #efc3e6;
+    
+    }
+
+    body {
+        background-color: #000000;
+        
+    }
+
+    textarea{
+        border-radius: 13pt;
+    }
+    
+
+
+</style>
+
+<body>
+  <div class="buscar">
+    <h1 style="	color:#ffffff" size-text="200" class=" font-mono text-9xl text-align:center tracking-wide uppercase shadow-none  subpixel-antialiased "><p> BUSCADOR DE ALIMENTOS</p></h1>
+      <input  class="caja " id="input" type="text" size="60"  placeholder="Ingresar su alimento a buscar">
+      <button class="btn btn-info mt-6" id="buton" onclick="response()">Buscar</button>
+      
+  </div>
+
+  <div  class="resp" > 
+    <h4> Alimentos encontrados: </h4>
+    <label id="contador"></label><br>
+  </div>
+   
+<script  type="text/javascript " src="expresion_regular03.js"></script>
+
+</body>
+</html>
